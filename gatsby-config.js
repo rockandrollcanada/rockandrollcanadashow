@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Rock and Roll Canada`,
+    description: `A Canadian web developer who loves to Rock and Roll with Java Script, Html and css.Rock and Roll Canada`,
+    author: `@rockandrollcanada`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,8 +13,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Russo One`,
+          `sans-serif\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
